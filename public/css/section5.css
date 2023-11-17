@@ -1,0 +1,157 @@
+.bg-section-5 {
+    position: relative;
+}
+
+.section-5 {
+    width: 96%;
+    background-color: #C7D9E5;
+    padding: 2rem;
+    position: absolute;
+    bottom: -3.5rem;
+    left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1920px) {
+    .section-5 {
+        padding: calc(1rem + (2 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+        bottom: calc(-1rem + (-3.5 - -1) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+/*@media screen and (max-width: 600px) {
+    .section-5 {
+        bottom: -8rem;
+    }
+}*/
+
+.section-5-txt {
+    width: 33.33%;
+    text-align: right;
+    color: rgba(0, 0, 0, .8);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+@media screen and (max-width: 1920px) {
+    .section-5-txt {
+        font-size: calc(.9rem + (1 - .9) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-5-txt {
+        width: 100%;
+        text-align: center;
+        padding-bottom: .66rem;
+    }
+}
+
+.section-5-input {
+    width: 33.33%;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .section-5-input {
+        width: 62%;
+        padding-bottom: .66rem;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-5-input {
+        width: 72%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .section-5-input {
+        width: 82%;
+    }
+}
+
+.section-5-input form {
+    padding: 0;
+    margin: 0;
+}
+
+.section-5-input input {
+    font-family: 'HeliosCond Regular', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, .8);
+    border: none;
+    outline: none;
+    padding: .5rem;
+    width: 80%;
+}
+@media screen and (max-width: 1920px) {
+    .section-5-input input {
+        font-size: calc(.9rem + (1 - .9) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding: calc(.33rem + (.5 - .33) * ((100vw - 17.78rem) / (120 - 17.78)))
+    }
+}
+
+
+.section-5-btn {
+    width: 33.33%;
+    text-align: left;
+}
+@media screen and (max-width: 600px) {
+    .section-5-btn {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.section-5-btn a,
+.section-5-btn button[type="submit"] {
+    font-family: 'HeliosCond Regular', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    padding: .52rem;
+    width: 50%;
+    background-color: rgba(150, 40, 27, 1);
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+    text-align: center;
+    letter-spacing: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 1920px) {
+    .section-5-btn a,
+    .section-5-btn button[type="submit"] {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding: calc(.33rem + (.52 - .33) * ((100vw - 17.78rem) / (120 - 17.78)))
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-5-btn a,
+    .section-5-btn button[type="submit"] {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-5-btn a,
+    .section-5-btn button[type="submit"] {
+        width: 58%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .section-5-btn a,
+    .section-5-btn button[type="submit"] {
+        width: 66%;
+    }
+}
+
+.section-5-btn a:hover,
+.section-5-btn button[type="submit"]:hover {
+    background-color: rgba(150, 40, 27, .8);
+}

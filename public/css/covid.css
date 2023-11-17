@@ -1,0 +1,179 @@
+@import "fonts.css";
+@import "style.css";
+@import "section0.css";
+@import "header.css";
+
+.covid-bg {
+    background-image: url("../images/10.png");
+    background-repeat: repeat;
+}
+
+.covid-bg h3 {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(80, 156, 169, 1);
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 4rem 0 .33rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: default;
+}
+@media screen and (max-width: 1920px) {
+    .covid-bg h3 {
+        font-size: calc(1.2rem + (2 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1.5rem + (2 - 1.5) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding:
+                calc(2rem + (4 - 2) * ((100vw - 17.78rem) / (120 - 17.78))) 0
+                calc(.33rem + (.33 - .33) * ((100vw - 17.78rem) / (120 - 17.78))) 0;
+    }
+}
+
+.covid-bg h4 {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(80, 156, 169, 1);
+    font-size: 1.33rem;
+    line-height: 1.66rem;
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: default;
+}
+@media screen and (max-width: 1920px) {
+    .covid-bg h4 {
+        font-size: calc(1rem + (1.33 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1.2rem + (1.66 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding:
+                calc(.33rem + (1 - .33) * ((100vw - 17.78rem) / (120 - 17.78))) 0
+                calc(1rem + (2 - 1) * ((100vw - 17.78rem) / (120 - 17.78))) 0;
+    }
+}
+
+.covids {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    transition: .5s;
+}
+
+.covid-item:nth-child(1) {
+    position: absolute;
+    width: 70%;
+    height: 2rem;
+    top: 0;
+    left: 15%;
+    margin: 0 auto;
+    background-image: url("../images/16.png");
+    background-repeat: repeat;
+    opacity: .5;
+    box-shadow: 1px -1px 5px rgba(0,0,0,.1);
+}
+
+.covid-item:nth-child(2) {
+    position: absolute;
+    width: 80%;
+    height: 2rem;
+    top: 1.33rem;
+    left: 10%;
+    margin: 0 auto;
+    background-image: url("../images/16.png");
+    background-repeat: repeat;
+    opacity: .75;
+    box-shadow: 1px -1px 5px rgba(0,0,0,.1);
+}
+
+.covid-item:nth-child(3),
+.covid-item:nth-child(4) {
+    position: absolute;
+    width: 90%;
+    top: 2.66rem;
+    left: 5%;
+    margin: 0 auto;
+    background-image: url("../images/16.png");
+    background-repeat: repeat;
+    box-shadow: 1px -1px 5px rgba(0,0,0,.1);
+}
+
+.covid-item {
+    padding: 2rem 4rem 3rem 4rem;
+}
+@media screen and (max-width: 1920px) {
+    .covid-item {
+        padding:
+                calc(1rem + (2 - 1) * ((100vw - 17.78rem) / (120 - 17.78)))
+                calc(1rem + (4 - 1) * ((100vw - 17.78rem) / (120 - 17.78)))
+                calc(1rem + (3 - 1) * ((100vw - 17.78rem) / (120 - 17.78)))
+                calc(1rem + (4 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+
+.in-board {
+    display: none;
+}
+
+.covid-item-empty {
+    height: 12rem;
+    width: 100%;
+}
+@media screen and (max-width: 1920px) {
+    .covid-item-empty {
+        height: calc(6rem + (12 - 6) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+
+.covid-item h5 {
+    font-family: 'karlson', sans-serif;
+    font-size: 1.33rem;
+    line-height: 1.7rem;
+    padding: 2rem 0 2rem 0;
+    text-transform: uppercase;
+    color: #2D4C62;
+    opacity: .8;
+}
+@media screen and (max-width: 1920px) {
+    .covid-item h5 {
+        font-size: calc(1rem + (1.33 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1.2rem + (1.7 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding: calc(1rem + (2 - 1) * ((100vw - 17.78rem) / (120 - 17.78))) 0;
+    }
+}
+
+.covid-item p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #2D4C62;
+    padding: 0 0 .5rem 0;
+}
+@media screen and (max-width: 1920px) {
+    .covid-item p {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+
+.leafer {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.leafer i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgba(80, 156, 169, 1);
+    cursor: pointer;
+    transition: .5s;
+}
+@media screen and (max-width: 1920px) {
+    .leafer i {
+        font-size: calc(1.66rem + (2 - 1.66) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding: calc(.66rem + (1 - .66) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+
+.leafer i:hover {
+    color: rgba(40, 116, 129, 1.0);
+}

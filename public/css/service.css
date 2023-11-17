@@ -1,0 +1,259 @@
+@import "fonts.css";
+@import "style.css";
+@import "section0.css";
+@import "header.css";
+
+.services-bg {
+    background-image: url("../images/10.png");
+    background-repeat: repeat;
+}
+
+.services-bg h3 {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(80, 156, 169, 1);
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 4rem 0 .33rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: default;
+}
+@media screen and (max-width: 1920px) {
+    .services-bg h3 {
+        font-size: calc(1.2rem + (2 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1.5rem + (2 - 1.5) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding:
+                calc(2rem + (4 - 2) * ((100vw - 17.78rem) / (120 - 17.78))) 0
+                calc(.33rem + (.33 - .33) * ((100vw - 17.78rem) / (120 - 17.78))) 0;
+    }
+}
+
+.services-bg h4 {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(80, 156, 169, 1);
+    font-size: 1.33rem;
+    line-height: 1.66rem;
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: default;
+}
+@media screen and (max-width: 1920px) {
+    .services-bg h4 {
+        font-size: calc(1rem + (1.33 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1.2rem + (1.66 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding:
+                calc(.33rem + (1 - .33) * ((100vw - 17.78rem) / (120 - 17.78))) 0
+                calc(1rem + (2 - 1) * ((100vw - 17.78rem) / (120 - 17.78))) 0;
+    }
+}
+
+.services {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 1rem 20px 1rem 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    width: 48%;
+    position: relative;
+    margin-bottom: 6rem;
+    background-color: rgba(245, 245, 245, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+@media screen and (max-width: 1920px) {
+    .service {
+        margin-bottom: calc(3rem + (6 - 3) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+@media screen and (max-width: 560px) {
+    .service {
+        width: 70%;
+        margin: 0 auto 4rem auto;
+    }
+}
+@media screen and (max-width: 460px) {
+    .service {
+        width: 80%;
+        margin: 0 auto 3.5rem auto;
+    }
+}
+@media screen and (max-width: 360px) {
+    .service {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+    }
+}
+
+.service img {
+    width: 33%;
+    transform: translate(1.5rem, 4rem) scale(1.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 1920px) {
+    .service img {
+        transform: translate(
+                calc(-3rem + (1.5 - -3) * ((100vw - 17.78rem) / (120 - 17.78))),
+                calc(0rem + (4 - 0) * ((100vw - 17.78rem) / (120 - 17.78))))
+        scale(1.3);
+    }
+}
+@media screen and (max-width: 760px) {
+    .service img {
+        width: 100%;
+        transform: translate(0rem, 0rem) scale(1);
+        margin-bottom: 1rem;
+    }
+}
+
+.service-desc {
+    width: 66%;
+    position: relative;
+}
+@media screen and (max-width: 760px) {
+    .service-desc {
+        width: 100%;
+    }
+}
+
+.service-address {
+    padding: 0 0 .5rem 0;
+    margin: 0;
+}
+@media screen and (max-width: 1920px) {
+    .service-address {
+        padding-bottom: calc(.25rem + (.5 - .25) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+
+.service-address p {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(70, 70, 70, .8);
+    font-size: .9rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1920px) {
+    .service-address p {
+        font-size: calc(.7rem + (.8 - .7) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+@media screen and (max-width: 760px) {
+    .service-address p {
+        text-align: center;
+    }
+}
+
+.service-name {
+    padding: .5rem 0 1rem 0;
+    margin: 0;
+}
+@media screen and (max-width: 1920px) {
+    .service-name {
+        padding-bottom: calc(.25rem + (1 - .25) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+
+.service-name p {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(150, 40, 27, 1);
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1920px) {
+    .service-name p {
+        font-size: calc(1.2rem + (1.3 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+        line-height: calc(1.2rem + (1.5 - 1.2) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+@media screen and (max-width: 760px) {
+    .service-name p {
+        text-align: center;
+    }
+}
+
+.service-price {
+    padding: .5rem 0 1rem 0;
+    margin: 0;
+}
+
+.service-price p {
+    font-family: 'karlson', Arial, sans-serif;
+    color: rgba(150, 40, 27, 1);
+    font-size: .9rem;
+    line-height: 1.2rem;
+    text-align: right;
+}
+@media screen and (max-width: 1920px) {
+    .service-price p {
+        font-size: calc(.7rem + (.9 - .7) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+@media screen and (max-width: 760px) {
+    .service-price p {
+        text-align: center;
+    }
+}
+
+.service-price p span {
+    font-size: .8rem;
+}
+
+.sel-tur i {
+    font-size: 1.2rem;
+    transform: translateY(.1rem);
+}
+
+.sel-tur {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    font-family: 'HeliosCond Regular', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.66rem;
+    border-radius: 2rem;
+    background-color: rgba(80, 156, 169, 1);
+    transform: translateY(50%);
+    text-align: center;
+    transition: .5s;
+    border: none;
+    outline: none;
+    letter-spacing: .05rem;
+    box-shadow: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 1920px) {
+    .sel-tur {
+        font-size: calc(.9rem + (1 - .9) * ((100vw - 17.78rem) / (120 - 17.78)));
+        padding:
+                calc(.9rem + (1 - .9) * ((100vw - 17.78rem) / (120 - 17.78)))
+                calc(1.33rem + (1.66 - 1.33) * ((100vw - 17.78rem) / (120 - 17.78)));
+        border-radius: calc(1.3rem + (2 - 1.3) * ((100vw - 17.78rem) / (120 - 17.78)));
+        right: calc(1rem + (2 - 1) * ((100vw - 17.78rem) / (120 - 17.78)));
+    }
+}
+@media screen and (max-width: 760px) {
+    .sel-tur {
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, 50%);
+    }
+}
+
+.sel-tur:hover {
+    background-color: rgba(40, 116, 129, 1.0);
+}
